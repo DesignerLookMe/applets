@@ -1,0 +1,51 @@
+{
+    "pages": [
+        "pages/home/home",
+        "pages/list/list",
+        "pages/search/search",
+        "pages/details/details",
+        "pages/hot/hot",
+        "pages/talk/talk",
+        "swan-sitemap/index/index"
+    ],
+    "window": {
+        "navigationBarBackgroundColor": "#ffffff",
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "看剧学历史",
+        "backgroundTextStyle": "light"
+    },
+    "tabBar": {
+        "list": [
+            {
+                "pagePath": "pages/home/home",
+                "text": "首页",
+                "iconPath": "/images/icon_home2-min.png",
+                "selectedIconPath": "/images/icon_home-min.png"
+            },
+            {
+                "pagePath": "pages/hot/hot",
+                "text": "最热",
+                "iconPath": "/images/icon_hot2-min.png",
+                "selectedIconPath": "/images/icon_hot-min.png"
+            },
+            {
+                "pagePath": "pages/talk/talk",
+                "text": "议论",
+                "iconPath": "/images/icon_talk2-min.png",
+                "selectedIconPath": "/images/icon_talk-min.png"
+            }
+        ],
+        "backgroundColor": "#fff",
+        "borderStyle": "white",
+        "color": "#999999",
+        "selectedColor": "#ba1717"
+    },
+    "dynamicLib": {
+        "swan-sitemap-lib": {
+            "provider": "swan-sitemap"
+        },
+        "myDynamicLib": {
+            "provider": "swan-interaction"
+        }
+    }
+}

@@ -1,0 +1,9 @@
+<image class="preloading" src="/images/page_preloading.png" s-if='{{preloading}}'></image>
+<view class="g-main" s-else>
+    <view class="g-top-box">
+        <nav-bar pagename = '{{pagename}}' hide="{{tohide}}"></nav-bar>
+    </view>
+    <view class="m-news-list">
+        <list-com pagelist='{{pagelist}}'></list-com>
+    </view>
+</view>

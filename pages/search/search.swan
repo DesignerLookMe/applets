@@ -1,0 +1,12 @@
+<view class="g-list-box">
+    <view class="m-list-top">
+        <nav-bar pagename = '{{pagename}}' navlist="{{navlist}}" hide="{{tohide}}" keyword='{{keyword}}'></nav-bar>
+    </view>
+    <view class="m-list-bot">
+        <list-com pagelist='{{pagelist}}'></list-com>
+    </view>
+</view>
+<view class="g-search-result" s-if="{{searchresult}}">
+    <image src="/images/search-min.png"></image>
+    暂无结果，我们会更加努力
+</view>

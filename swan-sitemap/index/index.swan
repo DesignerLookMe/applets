@@ -1,0 +1,8 @@
+<view class="g-sitemap">
+    <swan-sitemap-list
+        list-data="{{listData}}"
+        current-page="{{currentPage}}"
+        total-page="{{totalPage}}"
+        path="/swan-sitemap/index/index">
+    </swan-sitemap-list>
+</view>

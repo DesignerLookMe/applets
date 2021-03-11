@@ -1,0 +1,86 @@
+@import "../../app.css";
+.g-search{
+    position: relative;
+    margin:20rpx 30rpx;
+}
+.g-search image{
+    width:36rpx;
+    height:36rpx;
+    position:absolute;
+    top:22rpx;
+    left:27rpx;
+    z-index:22;
+}
+.u-search-box{
+    display:block;
+    background:#f2f2f2;
+    line-height:72rpx;
+    padding:18rpx 18rpx 18rpx 80rpx;
+    border-radius:80rpx;
+}
+
+/* 导航 */
+
+.f-nav-bar{
+    display:flex;
+    white-space:nowrap;
+    padding: 0 30rpx;
+}
+.f-nav-item{
+    position:relative;
+    padding-bottom:15rpx;
+    font-size:30rpx;
+    flex:1;
+    text-align:center;
+}
+.f-nav-itemcur{
+    color:#ba1717;
+    font-weight:bold;
+}
+.f-nav-itemcur:after{
+    width:50rpx;
+    height:8rpx;
+    content:'';
+    position:absolute;
+    background:#ba1717;
+    left:50%;
+    bottom:0;
+    margin-left:-25rpx;
+}
+
+.searchfixed{
+    position:fixed;
+    z-index:111;
+    top:0;
+    width:100%;
+    background:#fff;
+}
+
+
+.g-hot-box{
+    position:fixed;
+    width:100%;
+    height:calc( 100% - 120rpx );
+    background:#fff;
+    z-index:99;
+    top:120rpx;
+}
+.g-hot-box .g-title{
+    padding-top: 20rpx;
+}
+.g-hot-box .g-title text{
+    padding:0 30rpx;
+    font-size:32rpx;
+    font-weight:bold;
+}
+.f-hot-list{
+    padding:15rpx 30rpx;
+}
+.u-hot-item{
+    margin-right:30rpx;
+    padding:15rpx 30rpx;
+    border-radius:60rpx;
+    font-size:30rpx;
+    line-height:36rpx;
+    background:#fafafa;
+}

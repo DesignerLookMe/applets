@@ -1,0 +1,8 @@
+{
+    "navigationBarTitleText": "首页",
+    "usingComponents": {
+        "nav-bar": "/component/navbar/navbar",
+        "banner": "/component/banner/banner",
+        "list-com": "/component/listcom/listcom"
+    }
+}

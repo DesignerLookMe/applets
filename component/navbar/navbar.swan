@@ -1,0 +1,38 @@
+<view class="g-nav-bar  {{searchfixed?'searchfixed':''}}">
+    <view class="g-search">
+        <image src="../../images/icon_search-min.png" class="u-icon"></image>
+        <input confirm-type="search"
+                value="{{keyword}}"
+                placeholder="大秦赋"
+                bindfocus="bindFoucsInput"
+                bindblur="bindBlurInput"
+                bindinput="bindKeyInput"
+                bindconfirm="bindconfirm"
+                class="u-search-box"/>
+    </view>
+    <view class="f-nav-bar" s-if="{{hide}}">
+        <view class="f-nav-item {{item.classname == pagename ? 'f-nav-itemcur' : 456}}"
+              bindtap="goToList"
+              data-pagemane='{{pagename}}'
+              data-item="{{item}}">
+            看剧首页
+        </view>
+        <view s-for="item in navlist"
+              class="f-nav-item {{item.classname == pagename ? 'f-nav-itemcur' : 456}}"
+              bindtap="goToList"
+              data-pagemane='{{pagename}}'
+              data-item="{{item}}">
+            {{item.classname}}
+        </view>
+    </view>
+    <view class="g-hot-box" s-if="{{searchfixed}}">
+        <view class="g-title">
+            <text>热门搜索</text>
+        </view>
+        <view class="f-hot-list clear-both">
+            <view class="u-hot-item f-fl" s-for="item in hot" data-item="{{item}}" bindtap="gotosearch">
+                {{item}}
+            </view>
+        </view>
+    </view>
+</view>

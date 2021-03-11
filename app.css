@@ -1,0 +1,48 @@
+/**
+ * @file app.css
+ * @author swan
+ */
+ .g-top-border{
+    border-top:10rpx solid #e2e2e2;
+}
+.g-title{
+    font-size:32rpx;
+}
+.f-fr{
+    float:right;
+}
+.f-fl{
+    float:left;
+}
+.clear-both {*zoom:1}
+.clear-both:before,.clear-both:after {
+    display:table;
+    line-height:0;
+    content:" "
+}
+.clear-both:after {clear:both}
+*{
+    font-family: Arial, sans-serif;
+}
+
+.g-tltie {
+    position: relative;
+    text-align: center;
+}
+.g-tltie image{
+    width:231rpx;
+    height: 22rpx;
+    position: absolute;
+    left:50%;
+    margin: 13rpx 0 0 -115rpx;
+}
+.g-tltie text.f-title{
+    font-size: 32rpx;
+    line-height: 1.5;
+    font-weight: bold;
+    color: #333;
+}
+.preloading{
+    width: 750rpx;
+    height: 1206rpx;
+}

@@ -1,0 +1,35 @@
+<image src="/images/page_preloading.png" s-if="{{preloading}}" class="g-preloading-img"></image>
+<view s-else>
+    <view class="g-details">
+        <view class="m-details">
+            <view class="f-details-title clear-both">
+                <text>{{contitle}}</text>
+                <view class="u-from f-fl">来自：{{conbefrom}}</view><view class="u-from f-fr">时间：{{contime}}</view>
+            </view>
+            <view class="rich-text">
+                <view class="content-detail {{contentauto?'contentauto':''}}">
+                    <import src="../../bdParse/bdParse.swan" />
+                    <template is="bdParse" data="{{ {bdParseData:article.nodes} }}" />
+                    <view class="f-bot-box">
+                        <view class="f-bot-auto" bindtap="tapclickall">查看全文<image src="/images/icon_arrow_btn-min.png"></image></view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="g-ad-box">
+        <ad appid="d086ce3f" apid="7417363" class="ad" type="feed" ></ad>
+        <ad appid="d086ce3f" apid="7418697" class="ad" type="feed" ></ad>
+    </view>
+    <view class="g-tuwen-box g-top-border">
+        <view class="g-title">本文相关</view>
+        <list-com pagelist="{{pagelistnews}}" detailsid="{{detailsid}}"></list-com>
+    </view>
+    <view class="g-statement">
+        特别声明：以上内容(如有图片或视频亦包括在内)都源自网络，版权归原作者所有，如有侵犯您的原创版权或者图片、视频等版权权利请告知（441963725@qq.com），我们将尽快删除相关内容。
+    </view>
+    <view class="g-commentdetail">
+        <comment-list comment-param="{{commentParam}}" toolbar-config="{{toolbarConfig}}" bindunlogin="triggerLogin">
+        </comment-list>
+    </view>
+</view>

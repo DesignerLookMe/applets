@@ -1,0 +1,15 @@
+{
+  "name": "@smt-lib/bdparse",
+  "version": "1.0.1",
+  "description": "百度小程序富文本解析工具bdParse，改造自wxparse，支持html转换成百度小程序富文本节点",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitee.com/sootou/bdparse.git"
+  },
+  "author": "小程序",
+  "license": "MIT"
+}

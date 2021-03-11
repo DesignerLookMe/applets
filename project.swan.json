@@ -1,0 +1,25 @@
+{
+    "appid": "23652806",
+    "compilation-args": {
+        "common": {
+            "enhance": true
+        }
+    },
+    "host": "baiduboxapp",
+    "preview": {
+        "packageId": 1397139
+    },
+    "projectname": "看剧小程序",
+    "publish": {
+        "version": "1.0.2"
+    },
+    "setting": {
+        "urlCheck": false
+    },
+    "swan": {
+        "baiduboxapp": {
+            "extensionJsVersion": "1.19.4",
+            "swanJsVersion": "3.230.34"
+        }
+    }
+}

@@ -1,0 +1,24 @@
+<image class="preloading" src="/images/page_preloading.png" s-if='{{preloading}}'></image>
+<scroll-view
+            class="scroll-view"
+            scroll-y
+            scroll-top="{= scrollTop =}"
+            scroll-into-view="{= scrollIntoView =}"
+            scroll-with-animation="true"
+            bindscrolltolower="lower"
+            s-else>
+    <view class="g-main">
+        <view class="g-top-box">
+            <nav-bar pagename = '{{pagename}}' navlist="{{navlist}}" hide="{{tohide}}"></nav-bar>
+        </view>
+        <view class="g-banner">
+            <banner banner='{{bannerlist}}'></banner>
+        </view>
+        <view class="g-news-box g-top-border">
+            <view class="g-tltie"><image src="/images/bg_news-min.png"></image><text class="f-title">最新发布</text></view>
+            <view class="m-news-list">
+                <list-com pagelist='{{pagelist}}'></list-com>
+            </view>
+        </view>
+    </view>
+</scroll-view>

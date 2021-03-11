@@ -1,0 +1,24 @@
+<view class="g-banner">
+    <view class="wrap">
+        <view class="card-area">
+            <swiper
+                class="swiper"
+                indicator-dots="false"
+                indicator-color="rgba(255,255,255,0.50)"
+                indicator-active-color="#ba1717"
+                display-multiple-items="2"
+                next-margin="100rpx"
+                circular="true">
+                <swiper-item
+                    s-for="item in banner"
+                    data-item="{{item}}"
+                    class="g-banner-list"
+                    bindtap="todetails">
+                    <view class="swiper-item item-img">
+                        <image src="{{item.topimg}}"></image>
+                    </view>
+                </swiper-item>
+            </swiper>
+        </view>
+    </view>
+</view>

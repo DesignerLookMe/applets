@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "最热",
+    "usingComponents": {
+        "nav-bar": "/component/navbar/navbar",
+        "list-com": "/component/listcom/listcom"
+    }
+}

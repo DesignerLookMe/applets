@@ -1,0 +1,15 @@
+.m-list-bot{
+    padding:0 30rpx;
+}
+.g-search-result{
+    margin-top: 20%;
+    text-align: center;
+    color: #999;
+}
+.g-search-result image{
+    width:400rpx;
+    height: 269rpx;
+    display: block;
+    margin:0 auto;
+    margin-bottom: 30rpx;
+}

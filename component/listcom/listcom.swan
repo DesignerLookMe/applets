@@ -1,0 +1,31 @@
+<view class="g-page-list">
+    <view class="f-page-list clear-both"
+          s-for="item,index in pagelist"
+          data-item="{{item}}"
+          data-index="{{index}}"
+          data-id="{{detailsid}}"
+          bindtap="goToDetails">
+        <view class="f-page-list-l f-fl">
+            <text>
+               {{item.title}}
+            </text>
+            <view class="f-page-list-arrow">
+                <view class="f-page-arrow f-page-arrow1">
+                    <image src="/images/icon_column-min.png"></image>{{item.classname}}
+                </view>
+                <view class="f-page-arrow f-page-arrow2">
+                    <image src="/images/icon_browse-min.png"></image>{{item.onclick}}
+                </view>
+                <view class="f-page-arrow f-page-arrow3">
+                    <image src="/images/icon_reply-min.png"></image>{{item.plnum}}
+                </view>
+            </view>
+        </view>
+        <view class="f-page-image f-fr">
+            <image src="{{item.titlepic}}"></image>
+        </view>
+        <view class="g-ad-box" s-if="{{detailsid && (index % 3 == 2)}}">
+            <ad appid="d086ce3f" apid="7418697" class="ad" type="feed" ></ad>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,9 @@
+{
+    "navigationBarTitleText": "内容页",
+    "usingComponents": {
+        "list-com": "/component/listcom/listcom"
+    },
+    "usingSwanComponents": {
+        "comment-list": "dynamicLib://myDynamicLib/comment-list"
+    }
+}
